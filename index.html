@@ -26,7 +26,7 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 300px; /* only for demonstration, should be removed, **same as article section below */
   background: #ccc;
   padding: 20px;
 }
@@ -42,12 +42,12 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 300px; /* only for demonstration, should be removed, **same as nav section above */
 }
 
 /* Clear floats after the columns */
 section:after {
-  content: "";
+Learning  content: "";
   display: table;
   clear: both;
 }
@@ -78,16 +78,25 @@ footer {
 <section>
   <nav>
     <ul>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Hobbies</a></li>
-      <li><a href="#">Learning</a></li>
+      <li><a href="#Work">Work</a></li>
+      <li><a href="#Hobbies">Hobbies</a></li>
+      <li><a href="#Learning">Learning</a></li>
     </ul>
   </nav>
   
   <article>
-    <h1>Work</h1>
+    <h1 id="Work">Work</h1>
     <p>Describe what you do for a living.</p>
     <p>This can go multiple paragraphs.</p>
+    
+    <h1 id="Hobbies">Hobbies</h1>
+    <p>Describe what you like to do for fun.</p>
+    <p>This can go multiple paragraphs.</p>
+
+    <h1 id="Learning">Learning</h1>
+    <p>Describe what you are learning now.</p>
+    <p>This can go multiple paragraphs.</p>
+
   </article>
 </section>
 
