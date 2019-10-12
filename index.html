@@ -1,21 +1,99 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>My GitHub Webpage</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
 <body>
 
-  <h1> This is my page </h1>
-  <p> I need to learn some more html to make some simple stuff.</p>
+<header>
+  <h2>My Page</h2>
+</header>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Hobbies</a></li>
+      <li><a href="#">Learning</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Work</h1>
+    <p>Describe what you do for a living.</p>
+    <p>This can go multiple paragraphs.</p>
+  </article>
+</section>
+
+<footer>
+  <p>If you do not have doubts you have to inform yourself better.</p>
+</footer>
 
 </body>
-
 </html>
